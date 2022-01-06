@@ -1,0 +1,23 @@
+
+@import "font_awesome5_webfont";
+
+$primary: rgb(67, 188, 205);
+$enable-responsive-font-sizes: true;
+$cta-color: #ff0090;
+
+@import "bootstrap/scss/bootstrap";
+
+.btn-cta {
+  @include button-variant(
+    $cta-color,
+    darken($cta-color, 7.5%),
+    darken($cta-color, 10%),
+    lighten($cta-color, 5%),
+    lighten($cta-color, 10%),
+    darken($cta-color, 30%)
+  );
+}
+
+.text-cta {
+  color: $cta-color;
+}
